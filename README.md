@@ -19,21 +19,33 @@
 
 _UserController endpointleri_
 GET -> localhost:8084/user-api
+---
 GET -> localhost:8084/user-api/{id}
+---
 POST -> localhost:8084/user-api
+---
 PATCH -> localhost:8084/user-api/{id}/{addressId}
+---
 DELETE -> localhost:8084/user-api/{id}
 
 _ProductController endpointleri_
 GET -> localhost:8084/product-api
+---
 GET -> localhost:8084/product-api/{id}
+---
 POST -> localhost:8084/product-api
+---
 PATCH -> localhost:8084/product-api/{id}
+---
 DELETE -> localhost:8084/product-api/{id}
 
 _ProductCommentController endpointleri_
 GET -> localhost:8084/product-comment-api
+---
 GET -> localhost:8084/product-comment-api/{id}
+---
 POST -> localhost:8084/product-comment-api
+---
 PATCH -> localhost:8084/product-comment-api/{id}
+---
 DELETE -> localhost:8084/product-comment-api/{id}
