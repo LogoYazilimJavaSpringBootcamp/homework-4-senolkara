@@ -8,6 +8,7 @@
   * Redis
 
 ## Cevaplar
+### Cevap-1
 1. answer1 içerisinde bulunan projede bir yapının MySQL veya PostgresSQL veritabanlarıyla çalışabilinmesi amaçlanmıçtır. Hem MySQL hem PostgresSQL için DataAccess katmanı içerisinde her entity ile bağlantılı olacak şekilde ayrı ayrı paketler ve class lar oluşturulmuştur. 
 2. Herhangi bir controller üzerinde hangi veritabanı ile çalışacağını controller constructor metodu içerisinde belirtmemiz gerekmektedir. Bunu da polimorfizm den yararlanarak yapıyoruz.
 3. Örneğin MySQL ile çalışılacaksa MySQLUserDao, PostgresSQL ile çalışılacaksa PostgresSQLUserDao class larının çağırılması gerekmektedir. Sonuç olarak burada Dependecy Injection yapmış oluyoruz.
