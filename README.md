@@ -54,3 +54,7 @@ PATCH -> localhost:8084/product-comment-api/{id}
 ---
 DELETE -> localhost:8084/product-comment-api/{id}
 ---
+
+### Cevap-2
+JDBC, JDCB Template ve Hibernate ile Dao katmanı yazılmaya çalışılmıştır. 
+Yapılan çalışmalar sonucunda veri tipinin güvenliğinin ön planda olması göze çarpıyor. Fakat veritabanında yapılacak herhangi bir değişiklikte kodların tekrar gözden geçirileceği ve kendimizi tekrar etmemiz gerekeceği (DON'T REPEAT YOURSELF), veritabanı kolonlarının sırasına göre veriler indexlenerek set edileceğinden dolayı dikkatten kaçacak birçok kolon, sıra, veri, veri tipinin olabileceği dezavantajlar olarak görülebilir. Bunlara ek olarak her çalışmada tekrar sorgu yazılması ihtimali, ulaşılmak istenilen verinin türü, durumu, çokluğuna göre bu sorgular daha da karmaşık hale gelebileceği de ihtimal dahilindedir.
